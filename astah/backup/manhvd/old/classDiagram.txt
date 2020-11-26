@@ -1,0 +1,43 @@
+Map
+* Attr:
+    List building
+    List troop
+    List obs
+    stateMatrix
+* Ops:
+    build()
+    move()
+    removeObs()
+    convertCoord()
+    checkCollision()
+
+ConfigGame
+
+Building
+* Attr:
+    level
+    startTime
+    pos
+    id
+    type
+    state
+    Display
+* Ops:
+   upgrade()
+
+UserInfo
+* Attr:
+    Name
+    UID
+    gold
+    coin
+    elixir
+    level
+
+UI
+* ShopGUI
+* LobbyGUI
+* BattleGUI
+
+- Các info không thay đổi (giá nhà chính, giá lính, thời gian nâng cấp, size, ...) thì sẽ đưa vào làm config
+  thay vì có các attribute cho thông tin này
